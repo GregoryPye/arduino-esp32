@@ -107,8 +107,6 @@ set(ARDUINO_ALL_LIBRARIES
   Ticker
   Update
   USB
-  WebServer
-  NetworkClientSecure
   WiFi
   WiFiProv
   Wire
@@ -208,15 +206,6 @@ set(ARDUINO_LIBRARY_USB_SRCS
   libraries/USB/src/USBHIDSystemControl.cpp
   libraries/USB/src/USBHIDVendor.cpp
   libraries/USB/src/USBVendor.cpp)
-
-set(ARDUINO_LIBRARY_WebServer_SRCS
-  libraries/WebServer/src/WebServer.cpp
-  libraries/WebServer/src/Parsing.cpp
-  libraries/WebServer/src/detail/mimetable.cpp)
-
-set(ARDUINO_LIBRARY_NetworkClientSecure_SRCS
-  libraries/NetworkClientSecure/src/ssl_client.cpp
-  libraries/NetworkClientSecure/src/NetworkClientSecure.cpp)
 
 set(ARDUINO_LIBRARY_Network_SRCS
   libraries/Network/src/NetworkInterface.cpp
