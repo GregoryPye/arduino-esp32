@@ -89,8 +89,6 @@ set(ARDUINO_ALL_LIBRARIES
   Ethernet
   FFat
   FS
-  HTTPClient
-  HTTPUpdate
   Insights
   LittleFS
   NetBIOS
@@ -146,10 +144,6 @@ set(ARDUINO_LIBRARY_FFat_SRCS libraries/FFat/src/FFat.cpp)
 set(ARDUINO_LIBRARY_FS_SRCS
   libraries/FS/src/FS.cpp
   libraries/FS/src/vfs_api.cpp)
-
-set(ARDUINO_LIBRARY_HTTPClient_SRCS libraries/HTTPClient/src/HTTPClient.cpp)
-
-set(ARDUINO_LIBRARY_HTTPUpdate_SRCS libraries/HTTPUpdate/src/HTTPUpdate.cpp)
 
 set(ARDUINO_LIBRARY_Insights_SRCS libraries/Insights/src/Insights.cpp)
 
