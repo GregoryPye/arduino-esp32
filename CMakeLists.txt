@@ -76,23 +76,19 @@ set(CORE_SRCS
   )
 
 set(ARDUINO_ALL_LIBRARIES
-  ArduinoOTA
   AsyncUDP
   BLE
   BluetoothSerial
-  DNSServer
   EEPROM
   ESP_I2S
   ESP_NOW
   ESP_SR
   ESPmDNS
-  Ethernet
   FFat
   FS
   Insights
   LittleFS
   NetBIOS
-  Network
   OpenThread
   PPP
   Preferences
@@ -105,13 +101,8 @@ set(ARDUINO_ALL_LIBRARIES
   Ticker
   Update
   USB
-  WiFi
-  WiFiProv
   Wire
   )
-
-set(ARDUINO_LIBRARY_ArduinoOTA_SRCS libraries/ArduinoOTA/src/ArduinoOTA.cpp)
-set(ARDUINO_LIBRARY_ArduinoOTA_REQUIRES esp_https_ota)
 
 set(ARDUINO_LIBRARY_AsyncUDP_SRCS libraries/AsyncUDP/src/AsyncUDP.cpp)
 
@@ -120,8 +111,6 @@ set(ARDUINO_LIBRARY_BluetoothSerial_SRCS
   libraries/BluetoothSerial/src/BTAddress.cpp
   libraries/BluetoothSerial/src/BTAdvertisedDeviceSet.cpp
   libraries/BluetoothSerial/src/BTScanResultsSet.cpp)
-
-set(ARDUINO_LIBRARY_DNSServer_SRCS libraries/DNSServer/src/DNSServer.cpp)
 
 set(ARDUINO_LIBRARY_EEPROM_SRCS libraries/EEPROM/src/EEPROM.cpp)
 
@@ -136,8 +125,6 @@ set(ARDUINO_LIBRARY_ESP_SR_SRCS
   libraries/ESP_SR/src/esp32-hal-sr.c)
 
 set(ARDUINO_LIBRARY_ESPmDNS_SRCS libraries/ESPmDNS/src/ESPmDNS.cpp)
-
-set(ARDUINO_LIBRARY_Ethernet_SRCS libraries/Ethernet/src/ETH.cpp)
 
 set(ARDUINO_LIBRARY_FFat_SRCS libraries/FFat/src/FFat.cpp)
 
@@ -200,26 +187,6 @@ set(ARDUINO_LIBRARY_USB_SRCS
   libraries/USB/src/USBHIDSystemControl.cpp
   libraries/USB/src/USBHIDVendor.cpp
   libraries/USB/src/USBVendor.cpp)
-
-set(ARDUINO_LIBRARY_Network_SRCS
-  libraries/Network/src/NetworkInterface.cpp
-  libraries/Network/src/NetworkEvents.cpp
-  libraries/Network/src/NetworkManager.cpp
-  libraries/Network/src/NetworkClient.cpp
-  libraries/Network/src/NetworkServer.cpp
-  libraries/Network/src/NetworkUdp.cpp)
-
-set(ARDUINO_LIBRARY_WiFi_SRCS
-  libraries/WiFi/src/WiFiAP.cpp
-  libraries/WiFi/src/WiFi.cpp
-  libraries/WiFi/src/WiFiGeneric.cpp
-  libraries/WiFi/src/WiFiMulti.cpp
-  libraries/WiFi/src/WiFiScan.cpp
-  libraries/WiFi/src/WiFiSTA.cpp
-  libraries/WiFi/src/STA.cpp
-  libraries/WiFi/src/AP.cpp)
-
-set(ARDUINO_LIBRARY_WiFiProv_SRCS libraries/WiFiProv/src/WiFiProv.cpp)
 
 set(ARDUINO_LIBRARY_Wire_SRCS libraries/Wire/src/Wire.cpp)
 
